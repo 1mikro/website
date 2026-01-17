@@ -25,5 +25,17 @@
             <p>Hier finden Sie unsere Kontaktdaten und das Impressum.</p>
         </main>
     </div>
+    <script>
+        // Hamburger menu toggle for mobile navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuToggle = document.querySelector('.menu-toggle');
+            var menuList = document.querySelector('.secondary_header ul');
+            if (menuToggle && menuList) {
+                menuToggle.addEventListener('click', function() {
+                    menuList.classList.toggle('active');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
